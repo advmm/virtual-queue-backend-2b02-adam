@@ -5,9 +5,8 @@ Class:1B04
 */
 
 var { app } = require('./app.js');
-const port = process.env.PORT || 3000;
 
-app.listen(port, function () {
+app.listen(process.env.PORT || 3000, function () {
 
     console.log("App hosted at localhost:" + port);
 
